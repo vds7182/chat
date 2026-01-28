@@ -17,3 +17,4 @@ class User(SQLModel, table=True):
     username: str = Field(sa_column=Column(String(50), nullable=False))
     email: str = Field(sa_column=Column(String(100), nullable=False, unique=True))
     password_hash: str = Field(sa_column=Column(String(128), nullable=False))
+
